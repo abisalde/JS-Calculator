@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Calculator | Calculator with Vanilla JavaScript</title>
+<meta name="description" content="application">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/asset/css/style.css">
+</head>
+
+<body>
+    <!-- Calculator Challenge -->
+    <main id="my-calculator" role="application">
+        <div class="calculator-screen">
+            <div>
+                <input type="text" id="calc-output" disabled/>
+            </div>
+            <div>
+                <input type="text" id="calc-display" disabled/>
+            </div>
+        </div>
+        <div class="calc-values">
+            <table>
+                <tr>
+                    <td><button id="num_keys" class="block" value="clear">C</button></td>
+                    <td><button id="num_keys" class="block" value="back">&larr;</button></td>
+                    <td><button id="num_keys" value="percent">&percnt;</button></td>
+                    <td><button id="operator" class="notfirst operator" value="+">&plus;</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num_keys" value="7">7</button></td>
+                    <td><button id="num_keys" value="8">8</button></td>
+                    <td><button id="num_keys" value="9">9</button></td>
+                    <td><button id="operator" class="notfirst operator" value="*">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num_keys" value="4">4</button></td>
+                    <td><button id="num_keys" value="5">5</button></td>
+                    <td><button id="num_keys" value="6">6</button></td>
+                    <td><button id="operator" class="notfirst notfirstspecial operator" value="-">&minus;</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num_keys" value="1">1</button></td>
+                    <td><button id="num_keys" value="2">2</button></td>
+                    <td><button id="num_keys" value="3">3</button></td>
+                    <td><button id="operator" class="notfirst operator" value="/">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num_keys" value="0">0</button></td>
+                    <td><button id="num_keys" class="decimal" value=".">&#8729</button></td>
+                    <td colspan="2"><button class="block" value="=">&equals;</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer id="calc-footer"><span>Built by
+        <a href="https://www.twitter.com/abisalde" target="_blank">Abisalde</a>&nbsp;| All Rights Reserved &COPY;2019</span></footer>
+    <script src="/asset/js/script.js" async defer></script>
+</body>
+
+</html>
