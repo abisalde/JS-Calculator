@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2c3e50;
+    color: white;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+#my-calculator {
+    background: linear-gradient(160deg, #97ed55, #bf98eb, #97ed55);
+    height: auto;
+    width: 450px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculator-screen {
+    background-color: rgba(192, 223, 179, 0.782);
+    border-radius: 5px;
+}
+
+#calc-output,
+#calc-display {
+    border: none;
+    width: 430px;
+    background: transparent;
+    line-height: 50px;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+input#calc-output {
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Orbitron', sans-serif;
+}
+
+input#calc-display {
+    font-size: 24px;
+    font-family: 'Courgette', cursive;
+}
+
+.calc-values {
+    margin-top: 1em;
+}
+
+#num_keys {
+    background: #fff;
+    border: thin;
+    width: 97px;
+    height: 50px;
+    margin: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    outline: 0 solid;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#num_keys:hover,
+#operator:hover {
+    background: #4b8dcf;
+    color: #fff;
+}
+
+#num_keys:active,
+#operator:active {
+    background-color: #4b8dcf;
+    transform: translateY(4px);
+}
+
+td[colspan]>button:active {
+    background-color: #93e5a5;
+    transform: translateY(4px);
+}
+
+#operator {
+    border: thin;
+    border-radius: 10%;
+    width: 97px;
+    height: 55px;
+    margin: 6px;
+    font-size: 28px;
+    font-weight: 600;
+    user-select: none;
+    outline: 0 solid;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+button[value='+'] {
+    background: #e08733;
+    color: #fff;
+}
+
+button[value='*'] {
+    background: #803deb;
+    color: #fff;
+}
+
+button[value='/'] {
+    background: #98cf18;
+    color: #fff;
+}
+
+button[value='-'] {
+    background: #784978;
+    color: #fff;
+}
+
+button[value='='] {
+    background: #049123;
+    color: #fff;
+}
+
+button[value='=']:hover {
+    background: #93e5a5;
+    color: #fff;
+}
+
+td[colspan]>button {
+    width: 203px;
+    height: 50px;
+    margin: 6px;
+    font-size: 35px;
+    border-radius: 5px;
+    user-select: none;
+    outline: 0 solid;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    border: thin;
+}
+
+#calc-footer {
+    bottom: 0px;
+    background-color: #fff;
+    line-height: 7em;
+}
+
+span {
+    color: #000;
+    margin-left: 4em;
+    font-family: 'Courgette', cursive;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+}
+
+a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+a:hover {
+    color: #97ed55;
+    text-decoration-style: wavy;
+}
